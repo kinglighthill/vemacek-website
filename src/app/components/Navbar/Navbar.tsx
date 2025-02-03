@@ -49,7 +49,7 @@ const Navbar = () => {
                                 <img
                                     className="hidden h-48px w-48px lg:block"
                                     src={'/assets/logo/Logo.svg'}
-                                    alt="Courses-Logo"
+                                    alt="Veracone-Logo"
                                 />
                             </div>
 
