@@ -5,6 +5,7 @@ import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactus from "./Contactus";
+import Image from 'next/image';
 
 
 interface NavigationItem {
@@ -37,12 +38,12 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                <Image
                                     className="block h-30px w-30px lg:hidden"
                                     src={'/assets/logo/Logo.svg'}
                                     alt="Courses-Logo"
                                 />
-                                <img
+                                <Image
                                     className="hidden h-48px w-48px lg:block"
                                     src={'/assets/logo/Logo.svg'}
                                     alt="Veracone-Logo"

@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import * as React from "react";
 
 
@@ -24,7 +25,7 @@ const NamesList = () => {
             <div className=" text-lg sm:text-sm py-5 lg:py-0">
                 <div className="w-full max-w-[1024px] mx-auto">
                     <div className="aspect-w-1054 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                        <img
+                        <Image
                             src={product.imageSrc}
                             alt={product.imageSrc}
                             className="h-full w-full object-cover object-center"

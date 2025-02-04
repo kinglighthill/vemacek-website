@@ -1,9 +1,10 @@
-interface CircleProps {
+import React from 'react';
+
+interface CircleProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   width: number;
   height: number;
   fill?: boolean;
-  [key: string]: any;
 }
 
 const Circle: React.FC<CircleProps> = ({
@@ -25,3 +26,4 @@ const Circle: React.FC<CircleProps> = ({
 };
 
 export default Circle;
+

@@ -18,6 +18,7 @@ const ImageFallback: React.FC<ImageFallbackProps> = (props) => {
       <Image
         {...rest}
         src={imgSrc}
+        alt=""
         onError={() => {
           setImgSrc(fallback);
         }}
