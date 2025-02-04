@@ -4,8 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
-import Registerdialog from "./Registerdialog";
 import Contactus from "./Contactus";
 
 
@@ -17,10 +15,8 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: true },
-    { name: 'Courses', href: '#courses-section', current: false },
-    { name: 'Mentors', href: '#mentors-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
-    { name: 'Join', href: '#join-section', current: false },
+    { name: 'Products', href: '#products-section', current: false },
+    { name: 'About', href: '#about-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -74,18 +70,6 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* SIGNIN DIALOG */}
-
-                        <Signdialog />
-
-
-                        {/* REGISTER DIALOG */}
-
-                        <Registerdialog />
-
-
-                        {/* DRAWER FOR MOBILE VIEW */}
 
                         {/* DRAWER ICON */}
 

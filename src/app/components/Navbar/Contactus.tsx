@@ -17,14 +17,16 @@ const Contactusform = () => {
     }
 
     const handleClick = () => {
-        alert(`Name: ${inputValues.input1}, Email-address: ${inputValues.input2}, Message: ${inputValues.input3}`);
+        setInputValues({
+            input1: '',
+            input2: '',
+            input3: ''
+        })
         setIsOpen(false)
     }
 
-    // FORM SUBMIT
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
-        // handle form submission
     };
 
     const isDisabled = Object.values(inputValues).some((value) => value === '');
@@ -47,9 +49,12 @@ const Contactusform = () => {
                     </button>
                 </div>
                 <div className='hidden md:block'>
-                    <button type="button" className='text-15px font-medium space-links' onClick={openModal}>
+                    <a href="#footer-section" className='text-15px font-medium space-links'>
                         Contact Us
-                    </button>
+                    </a>
+                    {/* <button type="button" className='text-15px font-medium space-links' onClick={openModal}>
+                        Contact Us
+                    </button> */}
                 </div>
             </div>
 
@@ -137,11 +142,11 @@ const Contactusform = () => {
 
                                     </div>
 
-                                    {/* <div className='flex justify-end'>
+                                    <div className='flex justify-end'>
                                         <button type="button"
                                             onClick={closeModal}
                                             className="py-3 px-5 mt-2 text-sm font-medium w-50 text-center text-white rounded-lg bg-red hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Close</button>
-                                    </div> */}
+                                    </div>
 
                                 </Dialog.Panel>
                             </Transition.Child>
