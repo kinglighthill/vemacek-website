@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 
 
 const Contactusform = () => {
-    let [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     const [inputValues, setInputValues] = useState({
         input1: '',
