@@ -57,7 +57,13 @@ const footer = () => {
       <div className="mx-auto max-w-2xl pt-24 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           <div className="col-span-5">
-            <Image src={"/assets/logo/Logo2.svg"} alt="logo" className="pb-4" />
+            <Image
+              width={48}
+              height={48}
+              src={"/assets/logo/Logo2.svg"}
+              alt="logo"
+              className="pb-4"
+            />
             <h3 className="text-white text-lg font-medium leading-9 mb-4 lg:mb-20">
               {" "}
               Accelerate your digital transformation <br /> journey with
@@ -66,13 +72,20 @@ const footer = () => {
             <div className="flex gap-4">
               <Link href="https://wa.me/+2347083424754" target="_blank">
                 <Image
+                  width={48}
+                  height={48}
                   src={"/assets/footer/whatsapp.svg"}
                   alt="whatsapp"
                   className="footer-icons"
                 />
               </Link>
-              <Link href="mailto:info@veracone.com?subject=Subject&body=Body" target="_blank">
+              <Link
+                href="mailto:info@veracone.com?subject=Subject&body=Body"
+                target="_blank"
+              >
                 <Image
+                  width={48}
+                  height={48}
                   src={"/assets/footer/email.svg"}
                   alt="email"
                   className="footer-icons"
@@ -90,7 +103,10 @@ const footer = () => {
                 {product.link.map((link: LinkType, index: number) => (
                   <li key={index} className="mb-5">
                     <Link
-                      href={link.link.startsWith('#') ? link.link : `${link.link}`} target={link.link.startsWith('#') ? '_self' : '_blank'}
+                      href={
+                        link.link.startsWith("#") ? link.link : `${link.link}`
+                      }
+                      target={link.link.startsWith("#") ? "_self" : "_blank"}
                       className="text-offwhite text-sm font-normal mb-6 space-links"
                     >
                       {link.title}

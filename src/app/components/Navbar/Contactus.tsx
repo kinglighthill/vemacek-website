@@ -89,6 +89,8 @@ const Contactusform = () => {
                                     <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
                                         <Image
                                             className="mx-auto h-12 w-auto"
+                                            width={48}
+                                            height={48}
                                             src="/assets/logo/Logo.svg"
                                             alt="Your Company"
                                         />
