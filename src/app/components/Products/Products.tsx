@@ -38,11 +38,11 @@ const NamesList = () => {
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-8 xl:gap-x-8">
           <div className="col-span-5">
             <div className="flex justify-between">
-              <a href={product.href} target="_blank">
+              {/* <a href={product.href} target="_blank"> */}
                 <div className="mt-6 block text-3xl font-bold text-gray-900">
                   {product.name}
                 </div>
-              </a>
+              {/* </a> */}
             </div>
             <p
               aria-hidden="true"
@@ -51,15 +51,15 @@ const NamesList = () => {
               {product.description}
             </p>
           </div>
-          <div className="col-span-4 sm:col-span-2  flex items-center mt-2">
+          {/* <div className="col-span-4 sm:col-span-2  flex items-center mt-2">
             <a
-              href="https://www.scholarly.africa/"
+              href={product.href}
               target="_blank"
               className="bg-purple w-full hover:bg-purple text-white font-bold py-4 px-3 rounded text-center block"
             >
               Check out
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

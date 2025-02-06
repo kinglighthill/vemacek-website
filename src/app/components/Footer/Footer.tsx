@@ -25,10 +25,10 @@ const products: ProductType[] = [
         title: "About us",
         link: "#about-section",
       },
-      {
-        title: "Prepmate App",
-        link: "https://www.scholarly.africa/",
-      },
+      // {
+      //   title: "Prepmate App",
+      //   link: "https://www.scholarly.africa/",
+      // },
     ],
   },
   {
@@ -70,7 +70,7 @@ const footer = () => {
               scalable, secure, and <br /> future-ready technology solutions.{" "}
             </h3>
             <div className="flex gap-4">
-              <Link href="https://wa.me/+2347083424754" target="_blank">
+              <Link href="https://wa.me/+2348107993604" target="_blank">
                 <Image
                   width={48}
                   height={48}
