@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/Footer";
 
 export const metadata = {
-  title: "Veracone",
+  title: "Veracone Technologies",
   description:
     "Improved Learning, Better Academic Performance using Prepmate powered by Veracone Technologies",
 };
