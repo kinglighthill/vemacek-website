@@ -25,10 +25,10 @@ const products: ProductType[] = [
         title: "About us",
         link: "#about-section",
       },
-      // {
-      //   title: "Prepmate App",
-      //   link: "https://www.scholarly.africa/",
-      // },
+      {
+        title: "Prepmate App",
+        link: "https://www.myprepmate.com/",
+      },
     ],
   },
   {

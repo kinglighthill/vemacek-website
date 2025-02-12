@@ -15,7 +15,7 @@ const products: Product[] = [
     imageSrc: "/assets/products/prepmate.webp",
     description:
       "Prepmate organizes the tools and resources needed to get better grades in an easy to use app.",
-    href: "https://www.scholarly.africa/",
+    href: "https://www.myprepmate.com/",
   },
 ];
 
@@ -51,7 +51,7 @@ const NamesList = () => {
               {product.description}
             </p>
           </div>
-          {/* <div className="col-span-4 sm:col-span-2  flex items-center mt-2">
+          <div className="col-span-4 sm:col-span-2  flex items-center mt-2">
             <a
               href={product.href}
               target="_blank"
@@ -59,7 +59,7 @@ const NamesList = () => {
             >
               Check out
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
