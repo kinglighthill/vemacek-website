@@ -47,7 +47,7 @@ const Navbar = () => {
                   width={48}
                   height={48}
                   src={"/assets/logo/Logo.svg"}
-                  alt="Veracone-Logo"
+                  alt="Vemacek-Logo"
                 />
               </div>
 

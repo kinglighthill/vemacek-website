@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/Footer";
 
 export const metadata = {
-  title: "Veracone Technologies",
+  title: "Vemacek",
   description:
-    "Improved Learning, Better Academic Performance using Prepmate powered by Veracone Technologies",
+    "Improved Living, Better shopping experience using Instashop powered by Vemacek",
 };
 
 export default function RootLayout({
@@ -15,12 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="ARm3GZOS_d4Uw6dj1R9gAwmEwwnts2kDayK1bOmYK74"
-        />
-      </head>
       <body>
         <Navbar />
         {children}

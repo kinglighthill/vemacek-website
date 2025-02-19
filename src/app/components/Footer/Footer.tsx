@@ -25,10 +25,6 @@ const products: ProductType[] = [
         title: "About us",
         link: "#about-section",
       },
-      {
-        title: "Prepmate App",
-        link: "https://www.myprepmate.com/",
-      },
     ],
   },
   {
@@ -60,7 +56,7 @@ const footer = () => {
             <Image
               width={48}
               height={48}
-              src={"/assets/logo/Logo2.svg"}
+              src={"/assets/logo/Logo.svg"}
               alt="logo"
               className="pb-4"
             />
@@ -80,7 +76,7 @@ const footer = () => {
                 />
               </Link>
               <Link
-                href="mailto:info@veracone.com?subject=Subject&body=Body"
+                href="mailto:vemacek.tech@gmail.com?subject=Subject&body=Body"
                 target="_blank"
               >
                 <Image
@@ -124,9 +120,9 @@ const footer = () => {
       <div className="pb-24 px-4">
         <h3 className="text-center text-offwhite">
           @2025 - All Rights Reserved by{" "}
-          <Link href="https://veracone.com/" target="_blank">
+          <Link href="https://vemacek.com/" target="_blank">
             {" "}
-            Veracone Technologies Ltd
+            Vemacek Ltd
           </Link>
         </h3>
       </div>
