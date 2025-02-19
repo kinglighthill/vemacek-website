@@ -11,11 +11,11 @@ interface Product {
 
 const products: Product[] = [
   {
-    name: "Prepmate App",
-    imageSrc: "/assets/products/prepmate.webp",
+    name: "Instashop App",
+    imageSrc: "/assets/products/instashop.webp",
     description:
-      "Prepmate organizes the tools and resources needed to get better grades in an easy to use app.",
-    href: "https://www.myprepmate.com/",
+      "Instashop organizes the tools and resources needed to easily shop from your favorite supermarkets, all in one convenient app, helping you save time and money.",
+    href: "",
   },
 ];
 
@@ -23,14 +23,14 @@ const NamesList = () => {
   const nameElements = products.map((product, index) => (
     <div key={index}>
       <div className=" text-lg sm:text-sm py-5 lg:py-0">
-        <div className="w-full max-w-[1024px] mx-auto">
+        <div className="w-full max-w-[1024px] mx-auto flex justify-center items-center">
           <div className="aspect-w-1054 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
             <Image
-              width={1024}
-              height={500}
+              width={187.5}
+              height={406}
               src={product.imageSrc}
               alt={product.imageSrc}
-              className="h-full w-full object-cover object-center"
+              className="h-full object-cover object-center"
             />
           </div>
         </div>
@@ -38,11 +38,9 @@ const NamesList = () => {
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-8 xl:gap-x-8">
           <div className="col-span-5">
             <div className="flex justify-between">
-              {/* <a href={product.href} target="_blank"> */}
                 <div className="mt-6 block text-3xl font-bold text-gray-900">
                   {product.name}
                 </div>
-              {/* </a> */}
             </div>
             <p
               aria-hidden="true"
@@ -52,13 +50,20 @@ const NamesList = () => {
             </p>
           </div>
           <div className="col-span-4 sm:col-span-2  flex items-center mt-2">
-            <a
+            {
+              product.href.length === 0 ? <div
+              className="bg-purple w-full hover:bg-purple text-white font-bold py-4 px-3 rounded text-center block"
+            >
+              Coming soon
+            </div> : <a
               href={product.href}
               target="_blank"
               className="bg-purple w-full hover:bg-purple text-white font-bold py-4 px-3 rounded text-center block"
             >
               Check out
             </a>
+            }
+            
           </div>
         </div>
       </div>
